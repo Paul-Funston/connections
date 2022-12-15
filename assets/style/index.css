@@ -1,1 +1,35 @@
-@import "./general.css";
+
+@layer reset, default, component;
+
+@import "./general.css" layer(default);
+
+
+@layer component {
+
+main {
+
+  background: rgb(115, 212, 231) 
+              url(https://images.unsplash.com/photo-1541101232843-4bec8f5de0f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80)
+              no-repeat
+              fixed
+              center
+              ;
+  background-size: cover;
+
+}
+
+.login-container {
+  height: calc(100vh);
+  display: grid;
+  place-items: center;
+}
+
+.login-wrap {
+  background: rgb(var(--app-light-bg));
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+}

@@ -1,0 +1,12 @@
+@layer reset, default, component;
+
+@import "./general.css" layer(default);
+
+@layer component {
+
+  main {
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+  
+}

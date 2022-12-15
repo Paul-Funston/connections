@@ -28,7 +28,7 @@ async function getUser() {
     const data = await response.json();
     console.log(data);
     // this is where we continue data is an array of objects
-    suggestConnections(data); // format?
+    suggestUsers(data); // format?
 
 
   } catch(error) {
@@ -36,10 +36,10 @@ async function getUser() {
   }
 }
 
-function suggestConnections(people) {
+function suggestUsers(people) {
   // for each object add an html element
 }
 
-function addPerson(user) {
+function addUser(user) {
 
 }

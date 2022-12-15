@@ -11,24 +11,38 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="assets/style/index.css" media="all">
         <script src="./assets/script/index.js" defer></script>
     </head>
     <body>
-        <header>
-            <div class="container">
-
-            </div>
-        </header>
         <main>
-            <div class="container">
+            <div class="login-container">
+                <div class="login-wrap">
+                    <div class="login-left">
+                        <figure>
+                            <img src="./assets/media/umbrella-32.png">
+                        </figure>
 
+                    </div>
+                    <div class="login-form">
+                        <form>
+                            <h3>Welcome Back</h3>
+                            <p>To keep connected please login with your email address and password.</p>
+                            <div>
+                                <input placeholder="Email" type="email" name="email" class="email" autocomplete="off">
+                                <label for="email">Email:</label>
+                            </div>
+                            <div>
+                                <input placeholder="Password" type="password" name="password" class="password" autocomplete="off">
+                                <label for="password">Password:</label>
+                            </div>
+                            <input type="button" class="login-btn" value="Log In">
+                        </form>
+                    </div>
+                </div>
             </div>
         </main>
-        <footer>
-            <div class="container">
-                
-            </div>
-        </footer>
+
     </body>
 </html>
