@@ -40,7 +40,7 @@ function validateLogin() {
   if (isLoginValid(inputEmail.value.trim(), inputPass.value.trim())) {
     window.location.href = './profile.html';
   } else {
-      // put error message
+      // give user error message
   }
 
 };

@@ -3,10 +3,49 @@
 @import "./general.css" layer(default);
 
 @layer component {
+ 
+  header {
+    grid-area: head;
+    position: fixed;
+    inset: 0 0 auto 0;
+  }
 
-  main {
-    height: calc(100vh - var(--header-height) - var(--footer-height));
-}
+  footer {
+    grid-area: foot;
+    position: fixed;
+    inset: auto 0 0 0;
+  }
 
-  
+  .content-container {
+    position: fixed;
+    inset: var(--header-height) 5vw var(--footer-height) 5vw;
+    /* overflow: scroll; */
+    overscroll-behavior-y: none;
+    display: flex;
+    gap: 1rem;
+    
+  }
+
+  .user-profile {
+    background-color: aqua;
+  }
+
+  .feed {
+    background-color: aquamarine;
+  }
+
+  .contacts {
+    background-color: teal;
+  }
+
+  .card {
+    display: flex;
+  }
+
+  .card img {
+    border-radius: 50%;
+  }
+
+
+
 }
