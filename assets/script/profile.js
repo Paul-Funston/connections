@@ -107,9 +107,9 @@ function createPost() {
     posterAvatar.classList.add('avatar');
     const avatarURL = './assets/media/avatar.png';
 
-    posterAvatar.style.backgroundImage = avatarURL;
+    posterAvatar.innerHTML = `<img src="${avatarURL}" height='48px'>`;
     postDate.innerText = currentDay.toDateString();
-    poster.innerText = 'Paul Funston';
+    poster.innerHTML = '<strong>Paul Funston</strong>';
   
     postHeadStart.append(posterAvatar, poster);
     postHead.append(postHeadStart, postDate);

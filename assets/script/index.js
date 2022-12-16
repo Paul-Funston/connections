@@ -10,6 +10,9 @@
 const email = 'name@email.com';
 const password = 'password';
 
+const inputEmail = document.querySelector('.email');
+const inputPass = document.querySelector('.password');
+
 const loginBtn = document.querySelector('.login-btn');
 
 loginBtn.addEventListener('click', () => {
@@ -34,12 +37,19 @@ function getCredentials() {
 };
 
 function validateLogin() {
-  const inputEmail = document.querySelector('.email');
-  const inputPass = document.querySelector('.password');
+
 
   if (isLoginValid(inputEmail.value.trim(), inputPass.value.trim())) {
     window.location.href = './profile.html';
   } else {
+
+    inputEmail.classList.add('flash');
+    inputPass.classList.add('flash');
+
+    setTimeout(() => {
+      inputEmail.classList.remove('flash');
+      inputPass.classList.remove('flash');
+    }, 1000)
       // give user error message
   }
 
