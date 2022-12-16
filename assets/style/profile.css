@@ -90,10 +90,15 @@
     width: 100%;
   }
 
+  .profile .avatar {
+    height: 64px;
+    }
+
   .feed {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    align-content: flex-start;
   }
 
   form {
@@ -184,7 +189,30 @@
   span {
     opacity: 0.7;
   }
+}
 
+.post {
+  background-color: rgb(var(--app-white-bg));
+  border: 1px solid rgb(var(--app-light-bg));
+  border-radius: 4px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.post-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-head-left {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.post-head-left .avatar img {
+  border-radius: 50%;
 }
 
 
